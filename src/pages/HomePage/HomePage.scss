@@ -1,0 +1,59 @@
+.homepage{
+    width: 100vw;
+    height: 100vh;
+    background-color: #ff914d;
+
+    .homepage-div{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+
+        .carousel{
+            width: 85vh;
+        }
+    
+        .food-img{
+            height: 70vh;
+            width: 500px;
+        }
+
+        .right-div{
+            p{
+                line-height: 54px;
+                font-size: 45px;
+                font-weight: 700;
+                .delicious-p{
+                    margin-top: 7px;
+                    font-family: 'Kalam', cursive;
+                    font-size: 48px;
+                    margin-bottom: -5px;
+                }
+            }
+
+            .explore-btn{
+                background-color: white;
+                color: #ff914d;
+                font-size: 18px;
+                font-weight: 600;
+                height: 35px;
+                align-items: center;
+                margin-top: 30px;
+                padding-left: 15px;
+                padding-right: 15px;
+                border: 0;
+                border-radius: 4px;
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+                &:hover{
+                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                    cursor: pointer;
+                }
+            }
+        }
+
+    }
+
+    
+}
