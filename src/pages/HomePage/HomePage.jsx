@@ -35,11 +35,17 @@ const HomePage = () => {
         </div>
         <div className="right-div">
           <p>
-            Satify your Hunger with <p className="delicious-p"> Delicious & Affordable </p>Food
+            Satify your Hunger with{" "}
+            <p className="delicious-p"> Delicious & Affordable </p>Food
           </p>
-          <button className="explore-btn" onClick={()=>{
-            navigate("/menu");
-          }}>Explore More</button>
+          <button
+            className="explore-btn"
+            onClick={() => {
+              navigate("/menu");
+            }}
+          >
+            Explore More
+          </button>
         </div>
       </div>
     </div>
