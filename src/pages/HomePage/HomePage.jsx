@@ -1,15 +1,15 @@
 import React from "react";
-import NavBar from "../../components/NavBar/NavBar";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 
 import foods from "./foods";
 import "./HomePage.scss";
-const ab = require("../../assets/samosa.png");
+import { useNavigate } from "react-router-dom";
+
 const HomePage = () => {
+  const navigate = useNavigate();
   return (
     <div className="homepage">
-      <NavBar />
       <div className="homepage-div">
         <div>
           <Carousel
@@ -37,7 +37,9 @@ const HomePage = () => {
           <p>
             Satify your Hunger with <p className="delicious-p"> Delicious & Affordable </p>Food
           </p>
-          <button className="explore-btn">Explore More</button>
+          <button className="explore-btn" onClick={()=>{
+            navigate("/menu");
+          }}>Explore More</button>
         </div>
       </div>
     </div>

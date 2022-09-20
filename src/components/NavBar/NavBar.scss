@@ -33,24 +33,15 @@
 
     }
 
-    .login-button-navbar{
-        button{
-            background-color: #ff914d;
-            font-size: 18px;
-            font-weight: 500;
-            height: 35px;
-            align-items: center;
-            padding-left: 15px;
-            padding-right: 15px;
-            border: 0;
-            border-radius: 4px;
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    .icon-navbar{
+        font-size: 28px;
+        transition: font-size 0.3s;
 
-            &:hover{
-                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-                cursor: pointer;
-            }
+        &:hover{
+            font-size: 30px;
+            cursor: pointer;
         }
+        
     }
 
     
