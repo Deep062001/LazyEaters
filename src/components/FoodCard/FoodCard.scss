@@ -1,0 +1,70 @@
+.outer-card{
+    height: 250px;
+    width: 220px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin: 15px;
+    border-radius: 15px;
+
+    button{
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        transition: box-shadow 0.3s;
+
+        &:hover{
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+    }
+
+    img{
+        height: 170px;
+        width: 220px;
+    }
+
+    .details-div{
+        padding: 10px;
+    }
+
+    .description-div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-weight: 600;
+    }
+
+    .add-cart-btn{
+        width: 100%;
+        padding-top: 5px;
+        margin-top: 10px;
+        padding-bottom: 5px;
+        background-color: #ff914d;
+        border: none;
+        border-radius: 5px;
+        font-weight: 400;
+        cursor: pointer;
+    }
+
+    .btn-flex{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+
+        p{
+            border: 1px solid black;
+            width: 100%;
+            margin: 0 5px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .btn-qty{
+            padding: 5px 10px; 
+            background-color: #ff914d;
+            border: none;
+            border-radius: 5px;
+            font-weight: 600;
+            cursor: pointer;
+
+        }
+    }
+}
