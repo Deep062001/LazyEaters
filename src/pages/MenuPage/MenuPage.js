@@ -67,6 +67,7 @@ const MenuPage = () => {
                     image={item.image}
                     tags={item.tags}
                     price={item.price}
+                    isCart={false}
                   />
                 );
               })}
