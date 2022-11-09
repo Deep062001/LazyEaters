@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 import { addCartItem } from "../../actions/cartItems";
 import "./FoodCard.scss";
 
-const FoodCard = ({ id, name, image, tags, price }) => {
+const FoodCard = ({ id, name, image, tags, price, isCart }) => {
   const [quantity, setQuantity] = useState(0);
 
   const dispatch = useDispatch();
@@ -35,7 +35,7 @@ const FoodCard = ({ id, name, image, tags, price }) => {
           <p>{name}</p>
           <p>Rs. {price}</p>
         </div>
-        <div className="qty-div">
+        {!isCart && <div className="qty-div">
           {quantity === 0 ? (
             <button className="add-cart-btn" onClick={increaseQty}>
               Add to Cart
@@ -51,7 +51,7 @@ const FoodCard = ({ id, name, image, tags, price }) => {
               </button>
             </div>
           )}
-        </div>
+        </div>}
       </div>
     </div>
   );
